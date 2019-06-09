@@ -1,0 +1,114 @@
+\documentclass[pdf]{beamer}
+%\mode<presentation>{}
+
+\usepackage{amssymb,amsmath,amsthm,enumerate}
+\usepackage[utf8]{inputenc}
+\usepackage{array}
+\usepackage[parfill]{parskip}
+\usepackage{graphicx}
+\usepackage{caption}
+\captionsetup[figure]{labelformat=empty}
+\usepackage{subcaption}
+\usepackage{amsmath}
+\usepackage{bm}
+\usepackage{amsfonts,amscd}
+%\usepackage{gensymb}
+\usepackage[]{units}
+\usepackage{listings}
+\usepackage{multicol}
+\usepackage{tcolorbox}
+\usepackage{physics}
+\usepackage{cases}
+
+%new commands
+\newcommand{\der}[2]{\frac{d#1}{d#2}}
+\newcommand{\nder}[3]{\frac{d^#1 #2}{d #3 ^ #1}}
+\newcommand{\pder}[2]{\frac{\partial #1}{\partial #2}}
+\newcommand{\npder}[3]{\frac{\partial ^#1 #2}{\partial #3^#1}}
+\newcommand{\sentencelist}{def}
+\newcommand{\overbar}[1]{\mkern 1.5mu\overline{\mkern-1.5mu#1\mkern-1.5mu}\mkern 1.5mu}
+\newcommand{\lined}{\overbar}
+\newcommand{\perm}[2]{{}^{#1}\!P_{#2}}
+\newcommand{\comb}[2]{{}^{#1}C_{#2}}
+\newcommand{\intall}{\int_{-\infty}^{\infty}}
+\newcommand{\Var}[1]{\text{Var}\left(#1\right)}
+\newcommand{\E}[1]{\text{E}\left(#1\right)}
+\newcommand{\define}{\equiv}
+\newcommand{\diff}[1]{\mathrm{d}#1}
+\newcommand{\empy}[1]{{\color{darkorange}\emph{#1}}}
+\newcommand{\empr}[1]{{\color{cardinalred}\emph{#1}}}
+
+
+\theoremstyle{remark}
+\newtheorem*{remark}{Remark}
+\theoremstyle{definition}
+
+\newcommand{\examplebox}[2]{
+\begin{tcolorbox}[colframe=darkcardinal,colback=boxgray,title=#1]
+#2
+\end{tcolorbox}}
+
+\newcommand{\eld}[1]{\frac{d}{dt}(\frac{\partial L}{\partial \dot #1}) - \frac{\partial L}{\partial #1}=0}
+\newcommand{\euler}[1]{\frac{\partial L}{\partial #1}-\frac{d}{dt}(\frac{\partial L}{\partial \dot #1})}
+\newcommand{\eulerg}[1]{\frac{\partial g}{\partial #1}-\frac{d}{dt}(\frac{\partial g}{\partial \dot #1})}
+\newcommand{\divg}[1]{\nabla\cdot #1}
+\newcommand{\prob}[1]{P(#1\vert I)}
+
+
+
+\usetheme{Stanford} 
+\input{./style_files_stanford/my_beamer_defs.sty}
+%\logo{\includegraphics[height=0.4in]{./style_files_stanford/SU_New_BlockStree_2color.png}}
+
+
+
+\title[Literature: Approximate Residual Balancing]{Literature: Approximate Residual Balancing}
+%前面的[]是左下角
+\subtitle{}
+
+
+\author[Yue Zhao]{
+	\Large
+	Yue Zhao\\
+  %  \footnotesize \href{mailto:201611130148@mail.bnu.edu.cn}{201611130148@mail.bnu.edu.cn}
+}
+
+\institute{
+\\
+\large
+Beijing Normal University\\
+School of Mathematical Sciences}
+
+
+\beamertemplatenavigationsymbolsempty
+
+\begin{document}
+
+
+
+
+	
+
+\date{\today}
+
+\begin{noheadline}
+\begin{frame}\maketitle\end{frame}
+\end{noheadline}
+
+
+
+\begin{frame}{Literature: Approximate Residual Balancing}
+\begin{itemize}
+	\item \textbf{Background:} Counterfactual Inference.
+	\item \textbf{Motivation: }Design a better estimator for $$\mu_{\mathrm{c}}(x)=\mathbb{E}\left[Y_{i}(0) | X=x\right].$$
+	\item \textbf{Core Concept:} Combine two methods, weighted and regression adjustment.
+	\item \textbf{Asymptotics: } \\ Transformed independence design $\rightarrow$ overlap + design.
+\end{itemize}
+\end{frame}
+
+
+
+\begin{frame}{}
+Thanx  :) !
+\end{frame}
+\end{document}
